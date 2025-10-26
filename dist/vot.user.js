@@ -789,7 +789,7 @@
 			p.d(f, { r: () => m });
 			var m;
 			(function(d) {
-				d.custom = "custom", d.directlink = "custom", d.youtube = "youtube", d.piped = "piped", d.invidious = "invidious", d.vk = "vk", d.nine_gag = "nine_gag", d.gag = "nine_gag", d.twitch = "twitch", d.proxitok = "proxitok", d.tiktok = "tiktok", d.vimeo = "vimeo", d.xvideos = "xvideos", d.pornhub = "pornhub", d.twitter = "twitter", d.x = "twitter", d.rumble = "rumble", d.facebook = "facebook", d.rutube = "rutube", d.coub = "coub", d.bilibili = "bilibili", d.mail_ru = "mailru", d.mailru = "mailru", d.bitchute = "bitchute", d.eporner = "eporner", d.peertube = "peertube", d.dailymotion = "dailymotion", d.trovo = "trovo", d.yandexdisk = "yandexdisk", d.ok_ru = "okru", d.okru = "okru", d.googledrive = "googledrive", d.bannedvideo = "bannedvideo", d.weverse = "weverse", d.newgrounds = "newgrounds", d.egghead = "egghead", d.youku = "youku", d.archive = "archive", d.kodik = "kodik", d.patreon = "patreon", d.reddit = "reddit", d.kick = "kick", d.apple_developer = "apple_developer", d.appledeveloper = "apple_developer", d.poketube = "poketube", d.epicgames = "epicgames", d.odysee = "odysee", d.coursehunterLike = "coursehunterLike", d.sap = "sap", d.watchpornto = "watchpornto", d.linkedin = "linkedin", d.ricktube = "ricktube", d.incestflix = "incestflix", d.porntn = "porntn", d.dzen = "dzen", d.cloudflarestream = "cloudflarestream", d.loom = "loom", d.rtnews = "rtnews", d.bitview = "bitview", d.thisvid = "thisvid", d.ign = "ign", d.bunkr = "bunkr", d.imdb = "imdb", d.telegram = "telegram";
+				d.custom = "custom", d.directlink = "custom", d.youtube = "youtube", d.piped = "piped", d.invidious = "invidious", d.vk = "vk", d.nine_gag = "nine_gag", d.gag = "nine_gag", d.twitch = "twitch", d.proxitok = "proxitok", d.tiktok = "tiktok", d.vimeo = "vimeo", d.xvideos = "xvideos", d.pornhub = "pornhub", d.twitter = "twitter", d.x = "twitter", d.rumble = "rumble", d.facebook = "facebook", d.rutube = "rutube", d.coub = "coub", d.bilibili = "bilibili", d.mail_ru = "mailru", d.mailru = "mailru", d.bitchute = "bitchute", d.eporner = "eporner", d.hanime1 = "hanime1", d.hanimetv = "hanimetv", d.hentaigasm = "hentaigasm", d.peertube = "peertube", d.dailymotion = "dailymotion", d.trovo = "trovo", d.yandexdisk = "yandexdisk", d.ok_ru = "okru", d.okru = "okru", d.googledrive = "googledrive", d.bannedvideo = "bannedvideo", d.weverse = "weverse", d.newgrounds = "newgrounds", d.egghead = "egghead", d.youku = "youku", d.archive = "archive", d.kodik = "kodik", d.patreon = "patreon", d.reddit = "reddit", d.kick = "kick", d.apple_developer = "apple_developer", d.appledeveloper = "apple_developer", d.poketube = "poketube", d.epicgames = "epicgames", d.odysee = "odysee", d.coursehunterLike = "coursehunterLike", d.sap = "sap", d.watchpornto = "watchpornto", d.linkedin = "linkedin", d.ricktube = "ricktube", d.incestflix = "incestflix", d.porntn = "porntn", d.dzen = "dzen", d.cloudflarestream = "cloudflarestream", d.loom = "loom", d.rtnews = "rtnews", d.bitview = "bitview", d.thisvid = "thisvid", d.ign = "ign", d.bunkr = "bunkr", d.imdb = "imdb", d.telegram = "telegram";
 			})(m ||= {});
 		},
 		"./node_modules/@vot.js/core/dist/types/yandex.js": (d, f, p) => {
@@ -1403,17 +1403,17 @@
 					rawResult: !0
 				},
 				{
-					host: "hanime1",
+					host: m.r.hanime1,
 					url: "https://hanime1.me/",
 					match: /^(www\.)?hanime1\.me$/
 				},
 				{
-					host: "hanimetv",
+					host: m.r.hanimetv,
 					url: "https://hanime.tv/",
 					match: /^(www\.)?hanime\.tv$/
 				},
 				{
-					host: "hentaigasm",
+					host: m.r.hentaigasm,
 					url: "https://hentaigasm.com/",
 					match: /^(www\.)?hentaigasm\.com$/
 				}
