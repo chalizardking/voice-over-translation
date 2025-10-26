@@ -1,0 +1,24 @@
+diff --git a/node_modules/@vot.js/ext/dist/data/sites.js b/node_modules/@vot.js/ext/dist/data/sites.js
+index 14bc719..ba35b0f 100644
+--- a/node_modules/@vot.js/ext/dist/data/sites.js
++++ b/node_modules/@vot.js/ext/dist/data/sites.js
+@@ -535,4 +535,19 @@ export default [
+         match: (url) => /([^.]+)\.(mp4|webm)/.test(url.pathname),
+         rawResult: true,
+     },
++    {
++        host: "hanime1",
++        url: "https://hanime1.me/",
++        match: /^(www\.)?hanime1\.me$/,
++    },
++    {
++        host: "hanimetv",
++        url: "https://hanime.tv/",
++        match: /^(www\.)?hanime\.tv$/,
++    },
++    {
++        host: "hentaigasm",
++        url: "https://hentaigasm.com/",
++        match: /^(www\.)?hentaigasm\.com$/,
++    },
+ ];
