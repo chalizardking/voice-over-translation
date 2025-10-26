@@ -54,6 +54,9 @@
 // @match          *://*.douyin.com/*
 // @match          *://rumble.com/*
 // @match          *://*.eporner.com/*
+// @match          *://*.hanime1.me/*
+// @match          *://*.hanime.tv/*
+// @match          *://*.hentaigasm.com/*
 // @match          *://*.dailymotion.com/*
 // @match          *://*.ok.ru/*
 // @match          *://trovo.live/*
@@ -1398,6 +1401,21 @@
 					url: "stub",
 					match: (d) => /([^.]+)\.(mp4|webm)/.test(d.pathname),
 					rawResult: !0
+				},
+				{
+					host: "hanime1",
+					url: "https://hanime1.me/",
+					match: /^(www\.)?hanime1\.me$/
+				},
+				{
+					host: "hanimetv",
+					url: "https://hanime.tv/",
+					match: /^(www\.)?hanime\.tv$/
+				},
+				{
+					host: "hentaigasm",
+					url: "https://hentaigasm.com/",
+					match: /^(www\.)?hentaigasm\.com$/
 				}
 			];
 		},
@@ -3449,7 +3467,7 @@
 			}
 			let h = makeInt64Support();
 			function makeInt64Support() {
-				let d = new DataView(new ArrayBuffer(8)), f = typeof BigInt == "function" && typeof d.getBigInt64 == "function" && typeof d.getBigUint64 == "function" && typeof d.setBigInt64 == "function" && typeof d.setBigUint64 == "function" && (typeof process != "object" || typeof process.env != "object" || process.env.BUF_BIGINT_DISABLE !== "1");
+				let d = new DataView(new ArrayBuffer(8)), f = typeof BigInt == "function" && typeof d.getBigInt64 == "function" && typeof d.getBigUint64 == "function" && typeof d.setBigInt64 == "function" && typeof d.setBigUint64 == "function" && (!!globalThis.Deno || typeof process != "object" || typeof process.env != "object" || process.env.BUF_BIGINT_DISABLE !== "1");
 				if (f) {
 					let f = BigInt("-9223372036854775808"), p = BigInt("9223372036854775807"), m = BigInt("0"), h = BigInt("18446744073709551615");
 					return {
@@ -3733,7 +3751,7 @@
 			function assertFloat32(d) {
 				if (typeof d == "string") {
 					let f = d;
-					if (d = Number(d), isNaN(d) && f !== "NaN") throw Error("invalid float32: " + f);
+					if (d = Number(d), Number.isNaN(d) && f !== "NaN") throw Error("invalid float32: " + f);
 				} else if (typeof d != "number") throw Error("invalid float32: " + typeof d);
 				if (Number.isFinite(d) && (d > v || d < b)) throw Error("invalid float32: " + d);
 			}
