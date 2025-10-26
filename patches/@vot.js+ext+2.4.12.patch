@@ -1,5 +1,5 @@
 diff --git a/node_modules/@vot.js/ext/dist/data/sites.js b/node_modules/@vot.js/ext/dist/data/sites.js
-index 14bc719..ba35b0f 100644
+index 14bc719..53713f8 100644
 --- a/node_modules/@vot.js/ext/dist/data/sites.js
 +++ b/node_modules/@vot.js/ext/dist/data/sites.js
 @@ -535,4 +535,19 @@ export default [
@@ -7,17 +7,17 @@ index 14bc719..ba35b0f 100644
          rawResult: true,
      },
 +    {
-+        host: "hanime1",
++        host: CoreVideoService.hanime1,
 +        url: "https://hanime1.me/",
 +        match: /^(www\.)?hanime1\.me$/,
 +    },
 +    {
-+        host: "hanimetv",
++        host: CoreVideoService.hanimetv,
 +        url: "https://hanime.tv/",
 +        match: /^(www\.)?hanime\.tv$/,
 +    },
 +    {
-+        host: "hentaigasm",
++        host: CoreVideoService.hentaigasm,
 +        url: "https://hentaigasm.com/",
 +        match: /^(www\.)?hentaigasm\.com$/,
 +    },
